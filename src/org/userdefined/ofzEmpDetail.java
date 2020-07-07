@@ -8,9 +8,9 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 public class ofzEmpDetail {
+	
 	public static void main(String[] args) {
 
-		Map<Integer,empDetails> li =new HashMap<Integer,empDetails>();
 
 		empDetails obj1 = new empDetails();
 		obj1.setEmpid(1001);
@@ -29,16 +29,20 @@ public class ofzEmpDetail {
 		obj3.setEmpname("harsha");
 		obj3.setPhno(7877787896l);
 		obj3.setSalary(45500);
+		
+		Map<Integer,empDetails> li =new HashMap<Integer,empDetails>();
 
 		li.put(0,obj1);
 		li.put(1,obj2);
 		li.put(2,obj3);
 				
 		Set<Entry<Integer, empDetails>> dd = li.entrySet();
+		
 		for (Entry<Integer, empDetails> a : dd) {
+			
 			empDetails value = a.getValue();
 			System.out.println(value);
-			System.out.println(a.getKey());
+			System.out.println(a.getValue().getEmpname());
 			System.out.println(a.getValue().getEmpid());
 			System.out.println(a.getValue().getEmpname());
 			System.out.println(a.getValue().getPhno());

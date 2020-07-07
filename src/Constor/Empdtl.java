@@ -1,27 +1,30 @@
 package Constor;
 
-public class EmpDetail {
+public class Empdtl {
 	
 
-	public EmpDetail() {
+	public Empdtl() {
 		System.out.println("parent class default constructor");
 	}
-	public EmpDetail(int a) {
+	public Empdtl(int a) {
 		//this("yuvraj");
 		System.out.println("parameterized constructor for int "+a);
 	}	
 	
-	public EmpDetail(String s) {
+	public Empdtl(String s) {
 
 		System.out.println("parameterized constructor for string " +s);
 		System.out.println("parameterized constructor for string " +s);
 
 	}	
+		
 	
 	public static void main(String[] args) {
+		
+		Empdtl ldl=new Empdtl();
+		Empdtl ll=new Empdtl(50);
+		Empdtl lll=new Empdtl("kk");
 
-		//EmpDetail lll=new EmpDetail();
-		EmpDetail lll=new EmpDetail(10);
 	}
 
 }

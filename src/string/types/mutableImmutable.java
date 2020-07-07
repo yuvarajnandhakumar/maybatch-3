@@ -11,6 +11,11 @@ public class mutableImmutable {
 		System.out.println("immutable");
 		String s1 = "my name";
 		String s2 =" is yuvarj";
+		
+		s1=s1+s2;
+		
+		
+		
 		String s3 = s1.concat(s2);	
 		System.out.println(s3);
 
