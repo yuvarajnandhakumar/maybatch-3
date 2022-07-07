@@ -14,7 +14,7 @@ public class Companydetails extends EmpDetail{
 	}
 	
 	public Companydetails(int no) {
-		//System.out.println("para constructor of child class int"+no);
+		System.out.println("para constructor of child class int"+no);
 	}
 	
 
